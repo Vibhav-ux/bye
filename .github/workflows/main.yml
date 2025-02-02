@@ -1,0 +1,16 @@
+name: Test Action
+
+on:
+  push:
+    branches:
+      - main  # This triggers the action when pushing to the main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      - name: 23f2003054@ds.study.iitm.ac.in  # Your email as step name
+        run: echo "Hello, world!"
